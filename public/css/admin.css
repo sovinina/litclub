@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    color: #000;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #FFEBD2;
+}
+
+.cell{
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+h2{
+    width: 320px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form{
+    height: fit-content;
+    width: 95%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #FFEBD2;
+    padding: 20px;
+    min-height: 300px;
+    border-radius: 30px;
+}
+
+form input, form select{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=text]{
+    background-color: white;
+}
+
+#submit {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.poster{
+    width: 300px;
+    height: 428px;
+}
+
+.btn{
+    background-color: #ffffff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card>.btn{
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.btn a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.homePage{
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color: #fde9d0;
+    border-radius: 20px;
+    min-width: 250px;
+    padding: 20px;
+    height: fit-content;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cards{
+    display: flex;
+    max-width: 1100px;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.add{
+    height: 480px;
+}
+
+.block p{
+    margin-bottom: 5px;
+}
+.block p:last-child{
+    margin-bottom: 0;
+}
+
+input::file-selector-button{
+    background-color: white;
+    border-radius: 15px;
+    border: none ;
+    padding: 5px 10px;
+}
+
+#submit:hover, input::file-selector-button:hover, .btn:hover{
+    background-color: #e7e1de;
+    cursor: pointer;
+}
+
+.back{
+    margin-top: 85px;
+    width: 95%;
+    background-color: white;
+    min-height: 87vh;
+    margin-bottom: 10px;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    list-style-type: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 22pt;
+    color: #3E110C;
+}
+
+.nav ul li a{
+    color: #3E110C;
+}
+
+.nav ul li a:hover{
+    color: #FF681F;
+    cursor: pointer;
+}

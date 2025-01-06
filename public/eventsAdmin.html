@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Мероприятия</title>
+</head>
+<body>
+<div class="header">
+    <div>
+        <div class="logo">
+            <svg width="127" height="50" viewBox="0 0 173 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.6523 4.3209C57.7977 1.57124 61.7295 0 66.0545 0C75.4909 0 82.9614 7.46338 82.9614 16.8908V65.992C82.9614 66.7776 82.5682 67.1704 81.7818 67.1704H50.3273C49.5409 67.1704 49.1477 66.7776 49.1477 65.992V18.0692L10.2227 52.2436H0L54.6523 4.3209ZM155.307 33.7816H157.273C165.923 33.7816 173 40.8522 173 49.8868V67.956H139.186V49.8868C139.186 47.5299 139.973 45.1731 140.759 43.209L117.955 63.2423C114.809 65.992 110.877 67.5632 106.552 67.5632C97.1159 67.5632 89.6454 60.0998 89.6454 50.6724V1.17843C89.6454 0.392809 90.0386 0 90.825 0H122.28C123.066 0 123.459 0.392809 123.459 1.17843V49.1012L162.384 14.9268H172.607L150.589 34.5672C152.161 34.1744 153.734 33.7816 155.307 33.7816Z" fill="#3E110C"/>
+            </svg>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="menu.html">Главная</a></li>
+                <li><a href="login.html">Выйти</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="back">
+    <div class="cell">
+        <form action="api/events/" method="post">
+            <h2 class="caveat">Добавить мероприятие</h2>
+            <label for="name">Название:</label>
+            <input type="text" id="name" name="name" placeholder="Введите название"  required/>
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" placeholder="Введите дату" required/>
+            <label for="time">Время:</label>
+            <input type="time" id="time" name="time" placeholder="Введите время" required/>
+            <label for="description">Описание:</label>
+            <input type="text" id="description" name="description" placeholder="Введите описание" required/>
+            <label for="link">Ссылка на регистрацию:</label>
+            <input type="text" id="link" name="link" placeholder="Введите ссылку" required/>
+            <label for="place">Место проведения:</label>
+            <input type="text" id="place" name="place" placeholder="Введите место" required/>
+            <label for="poster">Постер:</label>
+            <input type="file" name="poster" id="poster">
+            <input type="submit" id="submit"/>
+        </form>
+        <div class="cards"></div>
+
+    </div>
+</div>
+
+
+
+<script src="js/mainAdmin.js"></script>
+</body>
+</html>

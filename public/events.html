@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Мероприятия</title>
+</head>
+<body>
+<div class="header">
+    <div>
+        <div class="logo">
+            <svg width="127" height="50" viewBox="0 0 173 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.6523 4.3209C57.7977 1.57124 61.7295 0 66.0545 0C75.4909 0 82.9614 7.46338 82.9614 16.8908V65.992C82.9614 66.7776 82.5682 67.1704 81.7818 67.1704H50.3273C49.5409 67.1704 49.1477 66.7776 49.1477 65.992V18.0692L10.2227 52.2436H0L54.6523 4.3209ZM155.307 33.7816H157.273C165.923 33.7816 173 40.8522 173 49.8868V67.956H139.186V49.8868C139.186 47.5299 139.973 45.1731 140.759 43.209L117.955 63.2423C114.809 65.992 110.877 67.5632 106.552 67.5632C97.1159 67.5632 89.6454 60.0998 89.6454 50.6724V1.17843C89.6454 0.392809 90.0386 0 90.825 0H122.28C123.066 0 123.459 0.392809 123.459 1.17843V49.1012L162.384 14.9268H172.607L150.589 34.5672C152.161 34.1744 153.734 33.7816 155.307 33.7816Z" fill="#3E110C"/>
+            </svg>
+        </div>
+        <div class="nav">
+            <ul class="nav-ul">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="events.html" class="selectedPage">Расписание</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <svg class="close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.939344 26.9394C0.353557 27.5252 0.353557 28.4749 0.939344 29.0607C1.52513 29.6465 2.47488 29.6465 3.06066 29.0607L15 17.1214L26.9393 29.0607C27.5251 29.6465 28.4749 29.6465 29.0607 29.0607C29.6465 28.4749 29.6465 27.5252 29.0607 26.9394L17.1213 15L29.0607 3.06069C29.6465 2.4749 29.6465 1.52516 29.0607 0.93937C28.4749 0.353583 27.5251 0.353584 26.9393 0.93937L15 12.8787L3.06066 0.93937C2.47488 0.353584 1.52513 0.353584 0.939344 0.93937C0.353557 1.52516 0.353557 2.4749 0.939344 3.06069L12.8787 15L0.939344 26.9394Z" fill="#6E1B0E"/>
+            </svg>
+            <div class="menu mob">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.55172C0 0.694731 0.610521 0 1.36364 0H28.6364C29.3895 0 30 0.694731 30 1.55172C30 2.40872 29.3895 3.10345 28.6364 3.10345H1.36364C0.610521 3.10345 0 2.40872 0 1.55172Z" fill="#6E1B0E"/>
+                    <path d="M0 15C0 14.143 0.610521 13.4483 1.36364 13.4483H28.6364C29.3895 13.4483 30 14.143 30 15C30 15.857 29.3895 16.5517 28.6364 16.5517H1.36364C0.610521 16.5517 0 15.857 0 15Z" fill="#6E1B0E"/>
+                    <path d="M1.36364 26.8966C0.610521 26.8966 0 27.5913 0 28.4483C0 29.3053 0.610521 30 1.36364 30H28.6364C29.3895 30 30 29.3053 30 28.4483C30 27.5913 29.3895 26.8966 28.6364 26.8966H1.36364Z" fill="#6E1B0E"/>
+                </svg>
+                <ul class="nav-mob">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="events.html" class="selectedPage">Расписание</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home p0">
+    <div class="calendar">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <p class="month caveat"></p>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="dates">
+
+    </div>
+</div>
+
+<div class="modal">
+    <div class="eventBlock">
+        <div class="eventHeader">
+            <div class="date-day-time">
+                <p class="caveat" id="date">6 февраля</p>
+                <p class="caveat" >-</p>
+                <p class="caveat" id="day">Вторник</p>
+                <p class="caveat" >-</p>
+                <p class="caveat" id="time"> 18:00</p>
+            </div>
+            <svg class="closeEvent" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M42.3841 1.37868C41.2125 0.207105 39.313 0.207108 38.1415 1.37868L21.8814 17.6388L5.62132 1.37873C4.44975 0.207154 2.55025 0.207154 1.37868 1.37873C0.207107 2.5503 0.207107 4.44979 1.37868 5.62137L17.6387 21.8814L1.37868 38.1415C0.20711 39.313 0.207107 41.2125 1.37868 42.3841C2.55025 43.5557 4.44975 43.5557 5.62132 42.3841L21.8814 26.1241L38.1415 42.3842C39.313 43.5557 41.2125 43.5557 42.3841 42.3842C43.5557 41.2126 43.5557 39.3131 42.3841 38.1415L26.124 21.8814L42.3841 5.62132C43.5557 4.44975 43.5557 2.55025 42.3841 1.37868Z" fill="#6E1B0E"/>
+            </svg>
+        </div>
+        <div class="eventAbout">
+            <div class="poster"></div>
+            <div class="eventInfo">
+                <div class="eventDscrptn"></div>
+                <div class="eventPlace caveat">Коворкинг на Вознесенском</div>
+                <div class="eventBooking">Забронировать стульчик</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>
